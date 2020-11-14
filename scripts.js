@@ -49,3 +49,9 @@ const elements = async function(e) {
 };
 
 domElements.container.addEventListener('click', elements);
+
+let elementData;
+elements().then(data => {
+    elementData = data;
+    return elementData;
+});
