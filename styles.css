@@ -104,3 +104,87 @@ img {
 .red h3, .red strong, .yellow h3, .yellow strong, .blue h3, .blue strong, .special {
     color: #FFF;
 }
+
+.pink {
+    background-color: plum;
+}
+
+.teal {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: deepskyblue;
+}
+
+.grey {
+    background-color: #999999;
+}
+
+.mustard {
+    background-color: gold;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.purple {
+    background-color: orchid;
+}
+
+.empty {
+    background-color: #FFF;
+}
+
+.nm .name {
+    color: crimson;
+}
+
+.li .name {
+    color: royalblue;
+}
+
+.un .name {
+    color: lightgrey;
+}
+
+span.deepskyblue {
+    color : deepskyblue;
+}
+
+span.lightgreen {
+    color: lightgreen;
+}
+
+span.gold {
+    color: gold;
+}
+
+span.lightskyblue {
+    color: lightskyblue;
+}
+
+span.orchid {
+    color: orchid;
+}
+
+span.plum {
+    color: plum;
+}
+
+span.red {
+    color: red;
+}
+
+span.orange {
+    color: orange;
+}
+
+.grey-c {
+    color: #999999;
+}
+
+.hide {
+    display: none;
+}
