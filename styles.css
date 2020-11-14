@@ -54,3 +54,22 @@ img {
     width: 720px;
     height: 240px;
 }
+
+.space p {
+    font-weight: 500;
+}
+
+.name {
+    font-size: 0.6rem;
+    word-wrap: break-word;
+}
+
+.element {
+    background-color: lightskyblue;
+    text-align: center;
+    margin: 3px;
+}
+
+.element:hover {
+    cursor: pointer;
+}
