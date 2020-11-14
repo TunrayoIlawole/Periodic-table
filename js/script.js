@@ -12,6 +12,7 @@ let domElements = {
     ec: document.querySelector('.ec-text')
 }
 
+
 let requestFile = "elements.json";
 
 const elements = async function(e) {
@@ -50,8 +51,27 @@ const elements = async function(e) {
 
 domElements.container.addEventListener('click', elements);
 
+// elements();
+
 let elementData;
 elements().then(data => {
     elementData = data;
     return elementData;
 });
+
+// const theElements = elements().then(elements => {
+//     return elements;
+// })
+
+
+
+// function displayElements(e, elements) {
+//     let element = elements.find(element => element.name === e.target.id);
+//     console.log(element);
+
+// }
+
+// container.addEventListener('click', (e) => {
+//     const item = e.target.closest('.element').id;
+//     console.log(item);
+// });

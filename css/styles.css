@@ -9,15 +9,9 @@ html {
 }
 
 body {
-    max-width: 1500px;
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    font-weight: 500;
-    margin-bottom: 0;
 }
 
 h3 {
@@ -28,6 +22,11 @@ h3 {
 h4 {
     font-size: 1rem;
     font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 p {
@@ -78,16 +77,19 @@ img {
 .row1 {
     display: grid;
     grid-template-columns: 5.56% 88.88% 5.56%;
+    /* margin-bottom: 10px; */
 }
 
 .row2 {
     display: grid;
     grid-template-columns: 5.56% 5.56% 55.52% 5.56% 5.56%5.56% 5.56%5.56% 5.56%;
+    /* margin-bottom: 10px; */
 }
 
 .row3, .row4, .row5 {
     display: grid;
     grid-template-columns: repeat(18, 5.555%);
+    /* margin-bottom: 10px; */
 }
 
 .lan {
@@ -200,6 +202,7 @@ span.orange {
         word-wrap: break-word;
     }
 }
+
 
 @media screen and (max-width: 700px) {
     .name, .lan {
