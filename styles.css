@@ -88,3 +88,19 @@ img {
     display: grid;
     grid-template-columns: repeat(18, 5.555%);
 }
+
+.lan {
+    font-size: 0.7rem;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.yellow {
+    background-color: orange;
+}
+
+.red h3, .red strong, .yellow h3, .yellow strong, .blue h3, .blue strong, .special {
+    color: #FFF;
+}
