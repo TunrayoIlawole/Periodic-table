@@ -47,3 +47,5 @@ const elements = async function(e) {
         alert(error);
     }
 };
+
+domElements.container.addEventListener('click', elements);
