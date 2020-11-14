@@ -45,7 +45,7 @@ const elements = async function(e) {
         domElements.ec.style.color = element.color;
         domElements.video.src = `./assets/PT/${element.name}.mp4`;
     } catch (error) {
-        alert(error);
+        console.log(error);
     }
 };
 
