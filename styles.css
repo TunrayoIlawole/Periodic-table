@@ -199,3 +199,47 @@ span.orange {
         word-wrap: break-word;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .name, .lan {
+        display: none;
+    }
+
+    h3, .num {
+        font-size: 0.6rem;
+    }
+
+    h3 {
+        margin: 2px;
+    }
+
+    .space p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    strong, h3 {
+        font-size: 1.5vw;
+    }
+
+    h4 {
+        font-size: 2.4vw;
+    }
+
+    .space p {
+        font-size: 2.3vw;
+    }
+
+    .num {
+        font-size: 0.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
