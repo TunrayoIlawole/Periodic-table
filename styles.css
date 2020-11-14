@@ -188,3 +188,14 @@ span.orange {
 .hide {
     display: none;
 }
+
+@media screen and (max-width: 1125px) {
+    .name {
+        font-size: 0.5rem;
+    }
+
+    .lan {
+        font-size: 0.6rem;
+        word-wrap: break-word;
+    }
+}
