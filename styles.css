@@ -73,3 +73,18 @@ img {
 .element:hover {
     cursor: pointer;
 }
+
+.row1 {
+    display: grid;
+    grid-template-columns: 5.56% 88.88% 5.56%;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 5.56% 5.56% 55.52% 5.56% 5.56%5.56% 5.56%5.56% 5.56%;
+}
+
+.row3, .row4, .row5 {
+    display: grid;
+    grid-template-columns: repeat(18, 5.555%);
+}
