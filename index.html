@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+  	<title>Periodic Table</title>
+</head>
+<body>
+	<div class = "container-fluid main-content">
+		<div class = "display">
+			<h2>Click on an element to find out its properties</h2>
+			<video src = "" autoplay loop muted></video>
+		</div>
+		<div class = "row1">
+			<div class = "element green" id = "Hydrogen">
+				<p><strong>1</strong></p>
+				<h3>H</h3>
+				<p class = "name">Hydrogen</p>
+			</div>
+			<div class = "space">
+				<h4>Did you know? => <span class = "fact-text"></span></h4>
+			</div>
+			<div class = "element pink nm" id = "Helium">
+				<p><strong>2</strong></p>
+				<h3>He</h3>
+				<p class = "name">Helium</p>
+			</div>
+		</div>
+		<div class = "row2">
+			<div class = "element red-bg" id = "Lithium">
+				<p><strong>3</strong></p>
+				<h3>Li</h3>
+				<p class = "name">Lithium</p>
+			</div>
+			<div class = "element yellow" id = "Berylium">
+				<p><strong>4</strong></p>
+				<h3>Be</h3>
+				<p class = "name">Berylium</p>
+			</div>
+			<div class = "space">
+				<p>Name: <span class = "name-text"></span></p>
+				<p>Atomic number: <span class = "am-text"></span></p>
+				<p>Mass number: <span class = "mn-text"></span></p>
+				<p>Discovered in: <span class = "year-text"></span></p>
+			</div>
+			<div class = "element mustard" id = "Boron">
+				<p><strong>5</strong></p>
+				<h3>B</h3>
+				<p class = "name">Boron</p>
+			</div>
+			<div class = "element green" id = "Carbon">
+				<p><strong>6</strong></p>
+				<h3>C</h3>
+				<p class = "name">Carbon</p>
+			</div>
+			<div class = "element green nm" id = "Nitrogen">
+				<p><strong>7</strong></p>
+				<h3>N</h3>
+				<p class = "name">Nitrogen</p>
+			</div>
+			<div class = "element green nm" id = "Oxygen">
+				<p><strong>8</strong></p>
+				<h3>O</h3>
+				<p class = "name">Oxygen</p>
+			</div>
+			<div class = "element green nm" id = "Flourine">
+				<p><strong>9</strong></p>
+				<h3>F</h3>
+				<p class = "name">Flourine</p>
+			</div>
+			<div class = "element pink nm" id = "Neon">
+				<p><strong>10</strong></p>
+				<h3>Ne</h3>
+				<p class = "name">Neon</p>
+			</div>
+		</div>
+		<div class = "row2">
+			<div class = "element red-bg" id = "Sodium">
+				<p><strong>11</strong></p>
+				<h3>Na</h3>
+				<p class = "name">Sodium</p>
+			</div>
+			<div class = "element yellow" id = "Magnesium">
+				<p><strong>12</strong></p>
+				<h3>Mg</h3>
+				<p class = "name">Magnesium</p>
+			</div>
+			<div class = "space">
+				<p>Nature: <span class = "nature-text"></span></p>
+				<p>Electrons per shell: <span class = "eps-text"></span></p>
+				<p>Electronic configuration: <span class = "ec-text"></span></p>
+			</div>
+			<div class = "element purple" id = "Aluminium">
+				<p><strong>13</strong></p>
+				<h3>Al</h3>
+				<p class = "name">Aluminium</p>
+			</div>
+			<div class = "element mustard" id = "Silicon">
+				<p><strong>14</strong></p>
+				<h3>Si</h3>
+				<p class = "name">Silicon</p>
+			</div>
+			<div class = "element green" id = "Phosphorus">
+				<p><strong>15</strong></p>
+				<h3>P</h3>
+				<p class = "name">Phosphorus</p>
+			</div>
+			<div class = "element green" id = "Sulfur">
+				<p><strong>16</strong></p>
+				<h3>S</h3>
+				<p class = "name">Sulfur</p>
+			</div>
+			<div class = "element green nm" id = "Chlorine">
+				<p><strong>17</strong></p>
+				<h3>Cl</h3>
+				<p class = "name">Chlorine</p>
+			</div>
+			<div class = "element pink nm" id = "Argon">
+				<p><strong>18</strong></p>
+				<h3>Ar</h3>
+				<p class = "name">Argon</p>
+			</div>
+		</div>
+		<div class = "row3">
+			<div class = "element red-bg" id = "Potassium">
+				<p><strong>19</strong></p>
+				<h3>K</h3>
+				<p class = "name">Potassium</p>
+			</div>
+			<div class = "element yellow" id = "Calcium">
+				<p><strong>20</strong></p>
+				<h3>Ca</h3>
+				<p class = "name">Calcium</p>
+			</div>
+			<div class = "element" id = "Scandium">
+				<p><strong>21</strong></p>
+				<h3>Sc</h3>
+				<p class = "name">Scandium</p>
+			</div>
+			<div class = "element" id = "Titanium">
+				<p><strong>22</strong></p>
+				<h3>Ti</h3>
+				<p class = "name">Titanium</p>
+			</div>
+			<div class = "element" id = "Vanadium">
+				<p><strong>23</strong></p>
+				<h3>V</h3>
+				<p class = "name">Vanadium</p>
+			</div>
+			<div class = "element" id = "Chromium">
+				<p><strong>24</strong></p>
+				<h3>Cr</h3>
+				<p class = "name">Chromium</p>
+			</div>
+			<div class = "element" id = "Manganese">
+				<p><strong>25</strong></p>
+				<h3>Mn</h3>
+				<p class = "name">Manganese</p>
+			</div>
+			<div class = "element" id = "Iron">
+				<p><strong>26</strong></p>
+				<h3>Fe</h3>
+				<p class = "name">Iron</p>
+			</div>
+			<div class = "element" id = "Cobalt">
+				<p><strong>27</strong></p>
+				<h3>CO</h3>
+				<p class = "name">Cobalt</p>
+			</div>
+			<div class = "element" id = "Nickel">
+				<p><strong>28</strong></p>
+				<h3>Ni</h3>
+				<p class = "name">Nickel</p>
+			</div>
+			<div class = "element" id = "Copper">
+				<p><strong>29</strong></p>
+				<h3>Cu</h3>
+				<p class = "name">Copper</p>
+			</div>
+			<div class = "element purple" id = "Zinc">
+				<p><strong>30</strong></p>
+				<h3>Zn</h3>
+				<p class = "name">Zinc</p>
+			</div>
+			<div class = "element purple" id = "Gallium">
+				<p><strong>31</strong></p>
+				<h3>Ga</h3>
+				<p class = "name">Gallium</p>
+			</div>
+			<div class = "element  mustard" id = "Germanium">
+				<p><strong>32</strong></p>
+				<h3>Ge</h3>
+				<p class = "name">Germanium</p>
+			</div>
+			<div class = "element mustard" id = "Arsenic">
+				<p><strong>33</strong></p>
+				<h3>As</h3>
+				<p class = "name">Arsenic</p>
+			</div>
+			<div class = "element green" id = "Selenium">
+				<p><strong>34</strong></p>
+				<h3>Se</h3>
+				<p class = "name">Selenium</p>
+			</div>
+			<div class = "element green li" id = "Bromine">
+				<p><strong>35</strong></p>
+				<h3>Br</h3>
+				<p class = "name">Bromine</p>
+			</div>
+			<div class = "element pink nm" id = "Krypton">
+				<p><strong>36</strong></p>
+				<h3>Kr</h3>
+				<p class = "name">Krypton</p>
+			</div>
+		</div>
+		<div class = "row3">
+			<div class = "element red-bg" id = "Rubidium">
+				<p><strong>37</strong></p>
+				<h3>Rb</h3>
+				<p class = "name">Rubidium</p>
+			</div>
+			<div class = "element yellow" id = "Strontium">
+				<p><strong>38</strong></p>
+				<h3>Sr</h3>
+				<p class = "name">Strontium</p>
+			</div>
+			<div class = "element" id = "Yttrium">
+				<p><strong>39</strong></p>
+				<h3>Y</h3>
+				<p class = "name">Yttrium</p>
+			</div>
+			<div class = "element" id = "Zirconium">
+				<p><strong>40</strong></p>
+				<h3>Zr</h3>
+				<p class = "name">Zirconium</p>
+			</div>
+			<div class = "element" id = "Niobium">
+				<p><strong>41</strong></p>
+				<h3>Nb</h3>
+				<p class = "name">Niobium</p>
+			</div>
+			<div class = "element" id = "Molybdenum">
+				<p><strong>42</strong></p>
+				<h3>Mo</h3>
+				<p class = "name">Molybdenum</p>
+			</div>
+			<div class = "element" id = "Technetium">
+				<p><strong>43</strong></p>
+				<h3>Tc</h3>
+				<p class = "name">Technetium</p>
+			</div>
+			<div class = "element" id = "Ruthenium">
+				<p><strong>44</strong></p>
+				<h3>Ru</h3>
+				<p class = "name">Ruthenium</p>
+			</div>
+			<div class = "element" id = "Rhodium">
+				<p><strong>45</strong></p>
+				<h3>Rh</h3>
+				<p class = "name">Rhodium</p>
+			</div>
+			<div class = "element" id = "Palladium">
+				<p><strong>46</strong></p>
+				<h3>Pd</h3>
+				<p class = "name">Palladium</p>
+			</div>
+			<div class = "element" id = "Silver">
+				<p><strong>47</strong></p>
+				<h3>Ag</h3>
+				<p class = "name">Silver</p>
+			</div>
+			<div class = "element purple" id = "Cadmium">
+				<p><strong>48</strong></p>
+				<h3>Cd</h3>
+				<p class = "name">Cadmium</p>
+			</div>
+			<div class = "element purple" id = "Indium">
+				<p><strong>49</strong></p>
+				<h3>In</h3>
+				<p class = "name">Indium</p>
+			</div>
+			<div class = "element purple" id = "Tin">
+				<p><strong>50</strong></p>
+				<h3>Sb</h3>
+				<p class = "name">Tin</p>
+			</div>
+			<div class = "element mustard" id = "Antimony">
+				<p><strong>51</strong></p>
+				<h3>Sb</h3>
+				<p class = "name">Antimony</p>
+			</div>
+			<div class = "element mustard" id = "Tellurium">
+				<p><strong>52</strong></p>
+				<h3>Te</h3>
+				<p class = "name">Tellurium</p>
+			</div>
+			<div class = "element green" id = "Iodine">
+				<p><strong>53</strong></p>
+				<h3>I</h3>
+				<p class = "name">Iodine</p>
+			</div>
+			<div class = "element pink nm" id = "Xenon">
+				<p><strong>54</strong></p>
+				<h3>Xe</h3>
+				<p class = "name">Xenon</p>
+			</div>
+		</div>
+		<div class = "row3">
+			<div class = "element red-bg" id = "Cesium">
+				<p><strong>55</strong></p>
+				<h3>Cs</h3>
+				<p class = "name">Cesium</p>
+			</div>
+			<div class = "element yellow" id = "Barium">
+				<p><strong>56</strong></p>
+				<h3>Ba</h3>
+				<p class = "name">Barium</p>
+			</div>
+			<div class = "element blue special">
+				<p class = "num">57 - 71</p>
+				<p class = "lan">Lanthanides</p>
+			</div>
+			<div class = "element" id = "Hafnium">
+				<p><strong>72</strong></p>
+				<h3>Hf</h3>
+				<p class = "name">Hafnium</p>
+			</div>
+			<div class = "element" id = "Tantalum">
+				<p><strong>73</strong></p>
+				<h3>Ta</h3>
+				<p class = "name">Tantalum</p>
+			</div>
+			<div class = "element" id = "Tungsten">
+				<p><strong>74</strong></p>
+				<h3>W</h3>
+				<p class = "name">Tungsten</p>
+			</div>
+			<div class = "element" id = "Rhenium">
+				<p><strong>75</strong></p>
+				<h3>Re</h3>
+				<p class = "name">Rhenium</p>
+			</div>
+			<div class = "element" id = "Osmium">
+				<p><strong>76</strong></p>
+				<h3>Os</h3>
+				<p class = "name">Osmium</p>
+			</div>
+			<div class = "element" id = "Iridium">
+				<p><strong>77</strong></p>
+				<h3>Ir</h3>
+				<p class = "name">Iridium</p>
+			</div>
+			<div class = "element" id = "Platinum">
+				<p><strong>78</strong></p>
+				<h3>Pt</h3>
+				<p class = "name">Platinum</p>
+			</div>
+			<div class = "element" id = "Gold">
+				<p><strong>79</strong></p>
+				<h3>Au</h3>
+				<p class = "name">Gold</p>
+			</div>
+			<div class = "element purple li" id = "Mercury">
+				<p><strong>80</strong></p>
+				<h3>Hg</h3>
+				<p class = "name">Mercury</p>
+			</div>
+			<div class = "element purple" id = "Thallium">
+				<p><strong>81</strong></p>
+				<h3>Tl</h3>
+				<p class = "name">Thallium</p>
+			</div>
+			<div class = "element purple" id = "Lead">
+				<p><strong>82</strong></p>
+				<h3>Pb</h3>
+				<p class = "name">Lead</p>
+			</div>
+			<div class = "element purple" id = "Bismuth">
+				<p><strong>83</strong></p>
+				<h3>Bi</h3>
+				<p class = "name">Bismuth</p>
+			</div>
+			<div class = "element purple" id = "Polonium">
+				<p><strong>84</strong></p>
+				<h3>Po</h3>
+				<p class = "name">Polonium</p>
+			</div>
+			<div class = "element mustard" id = "Astatine">
+				<p><strong>85</strong></p>
+				<h3>At</h3>
+				<p class = "name">Astatine</p>
+			</div>
+			<div class = "element pink nm" id = "Radon">
+				<p><strong>86</strong></p>
+				<h3>Rn</h3>
+				<p class = "name">Radon</p>
+			</div>
+		</div>
+		<div class = "row3">
+			<div class = "element red-bg" id = "Francium">
+				<p><strong>87</strong></p>
+				<h3>Fr</h3>
+				<p class = "name">Francium</p>
+			</div>
+			<div class = "element yellow" id = "Radium">
+				<p><strong>88</strong></p>
+				<h3>Ra</h3>
+				<p class = "name">Radium</p>
+			</div>
+			<div class = "element teal">
+				<p class = "num">89 - 103</p>
+				<p class = "lan">Actinides</p>
+			</div>
+			<div class = "element" id = "Rutherfordium">
+				<p><strong>104</strong></p>
+				<h3>Rf</h3>
+				<p class = "name">Rutherfordium</p>
+			</div>
+			<div class = "element" id = "Dubnium">
+				<p><strong>105</strong></p>
+				<h3>DB</h3>
+				<p class = "name">Dubnium</p>
+			</div>
+			<div class = "element" id = "Seaborgium">
+				<p><strong>106</strong></p>
+				<h3>Sg</h3>
+				<p class = "name">Seaborgium</p>
+			</div>
+			<div class = "element" id = "Bohrium">
+				<p><strong>107</strong></p>
+				<h3>Bh</h3>
+				<p class = "name">Bohrium</p>
+			</div>
+			<div class = "element" id = "Hassium">
+				<p><strong>108</strong></p>
+				<h3>Hs</h3>
+				<p class = "name">Hassium</p>
+			</div>
+			<div class = "element grey un" id = "Meitnerium">
+				<p><strong>109</strong></p>
+				<h3>Me</h3>
+				<p class = "name">Meitnerium</p>
+			</div>
+			<div class = "element grey un" id = "Darmstadtium">
+				<p><strong>110</strong></p>
+				<h3>Ds</h3>
+				<p class = "name">Darmstadtium</p>
+			</div>
+			<div class = "element grey un" id = "Roentgenium">
+				<p><strong>111</strong></p>
+				<h3>Rg</h3>
+				<p class = "name">Roentgenium</p>
+			</div>
+			<div class = "element purple un" id = "Copernicium">
+				<p><strong>112</strong></p>
+				<h3>Cn</h3>
+				<p class = "name">Copernicium</p>
+			</div>
+			<div class = "element grey un" id = "Nihonium">
+				<p><strong>113</strong></p>
+				<h3>Nh</h3>
+				<p class = "name">Nihonium</p>
+			</div>
+			<div class = "element grey un" id = "Flerovium">
+				<p><strong>114</strong></p>
+				<h3>Fl</h3>
+				<p class = "name">Flerovium</p>
+			</div>
+			<div class = "element grey un" id = "Moscovium">
+				<p><strong>115</strong></p>
+				<h3>Mc</h3>
+				<p class = "name">Moscovium</p>
+			</div>
+			<div class = "element grey un" id = "Livermorium">
+				<p><strong>116</strong></p>
+				<h3>Lv</h3>
+				<p class = "name">Livermorium</p>
+			</div>
+			<div class = "element grey un" id = "Tennessine">
+				<p><strong>117</strong></p>
+				<h3>Ts</h3>
+				<p class = "name">Tennessine</p>
+			</div>
+			<div class = "element grey un" id = "Oganesson">
+				<p><strong>118</strong></p>
+				<h3>Og</h3>
+				<p class = "name">Oganesson</p>
+			</div>
+		</div>
+		<div class = "row4">
+			<div class = "element empty"></div>
+			<div class = "element empty"></div>
+			<div class = "element blue" id = "Lanthanum">
+				<p><strong>57</strong></p>
+				<h3>La</h3>
+				<p class = "name">Lanthanum</p>
+			</div>
+			<div class = "element blue" id = "Cerium">
+				<p><strong>58</strong></p>
+				<h3>Ce</h3>
+				<p class = "name">Cerium</p>
+			</div>
+			<div class = "element blue" id = "Praseodymium">
+				<p><strong>59</strong></p>
+				<h3>Pr</h3>
+				<p class = "name">Praseodymium</p>
+			</div>
+			<div class = "element blue" id = "Neodymium">
+				<p><strong>60</strong></p>
+				<h3>Nd</h3>
+				<p class = "name">Neodymium</p>
+			</div>
+			<div class = "element blue" id = "Promethium">
+				<p><strong>61</strong></p>
+				<h3>Pr</h3>
+				<p class = "name">Promethium</p>
+			</div>
+			<div class = "element blue" id = "Samarium">
+				<p><strong>62</strong></p>
+				<h3>Sm</h3>
+				<p class = "name">Samarium</p>
+			</div>
+			<div class = "element blue" id = "Europium">
+				<p><strong>63</strong></p>
+				<h3>Eu</h3>
+				<p class = "name">Europium</p>
+			</div>
+			<div class = "element blue" id = "Gadolinium">
+				<p><strong>64</strong></p>
+				<h3>Gd</h3>
+				<p class = "name">Gadolinium</p>
+			</div>
+			<div class = "element blue" id = "Terbium">
+				<p><strong>65</strong></p>
+				<h3>Tb</h3>
+				<p class = "name">Terbium</p>
+			</div>
+			<div class = "element blue" id = "Dysprosium">
+				<p><strong>66</strong></p>
+				<h3>Dy</h3>
+				<p class = "name">Dysprosium</p>
+			</div>
+			<div class = "element blue" id = "Holmium">
+				<p><strong>67</strong></p>
+				<h3>Ho</h3>
+				<p class = "name">Holmium</p>
+			</div>
+			<div class = "element blue" id = "Erbium">
+				<p><strong>68</strong></p>
+				<h3>Er</h3>
+				<p class = "name">Erbium</p>
+			</div>
+			<div class = "element blue" id = "Thulium">
+				<p><strong>69</strong></p>
+				<h3>Tm</h3>
+				<p class = "name">Thulium</p>
+			</div>
+			<div class = "element blue" id = "Ytterbium">
+				<p><strong>70</strong></p>
+				<h3>Yb</h3>
+				<p class = "name">Ytterbium</p>
+			</div>
+			<div class = "element blue" id = "Lutetium">
+				<p><strong>71</strong></p>
+				<h3>Lu</h3>
+				<p class = "name">Lutetium</p>
+			</div>
+			<div class = "element empty"></div>
+		</div>
+		<div class = "row5">
+			<div class = "element empty"></div>
+			<div class = "element empty"></div>
+			<div class = "element teal" id = "Actinium">
+				<p><strong>89</strong></p>
+				<h3>Ac</h3>
+				<p class = "name">Actinium</p>
+			</div>
+			<div class = "element teal" id = "Thorium">
+				<p><strong>90</strong></p>
+				<h3>Th</h3>
+				<p class = "name">Thorium</p>
+			</div>
+			<div class = "element teal" id = "Protactinium">
+				<p><strong>91</strong></p>
+				<h3>Pa</h3>
+				<p class = "name">Protactinium</p>
+			</div>
+			<div class = "element teal" id = "Uranium">
+				<p><strong>92</strong></p>
+				<h3>U</h3>
+				<p class = "name">Uranium</p>
+			</div>
+			<div class = "element teal" id = "Neptunium">
+				<p><strong>93</strong></p>
+				<h3>Np</h3>
+				<p class = "name">Neptunium</p>
+			</div>
+			<div class = "element teal" id = "Plutonium">
+				<p><strong>94</strong></p>
+				<h3>Pu</h3>
+				<p class = "name">Plutonium</p>
+			</div>
+			<div class = "element teal" id = "Americium">
+				<p><strong>95</strong></p>
+				<h3>Am</h3>
+				<p class = "name">Americium</p>
+			</div>
+			<div class = "element teal" id = "Curium">
+				<p><strong>96</strong></p>
+				<h3>Cm</h3>
+				<p class = "name">Curium</p>
+			</div>
+			<div class = "element teal" id = "Berkelium">
+				<p><strong>97</strong></p>
+				<h3>Bk</h3>
+				<p class = "name">Berkelium</p>
+			</div>
+			<div class = "element teal" id = "Californium">
+				<p><strong>98</strong></p>
+				<h3>Cf</h3>
+				<p class = "name">Californium</p>
+			</div>
+			<div class = "element teal" id = "Einsteinium">
+				<p><strong>99</strong></p>
+				<h3>Es</h3>
+				<p class = "name">Einstienium</p>
+			</div>
+			<div class = "element teal" id = "Fermium">
+				<p><strong>100</strong></p>
+				<h3>Fm</h3>
+				<p class = "name">Fermium</p>
+			</div>
+			<div class = "element teal" id = "Mendelevium">
+				<p><strong>101</strong></p>
+				<h3>Md</h3>
+				<p class = "name">Mendelevium</p>
+			</div>
+			<div class = "element teal" id = "Nobelium">
+				<p><strong>102</strong></p>
+				<h3>No</h3>
+				<p class = "name">Nobelium</p>
+			</div>
+			<div class = "element teal" id = "Lawrencium">
+				<p><strong>103</strong></p>
+				<h3>Lr</h3>
+				<p class = "name">Lawrencium</p>
+			</div>
+			<div class = "element empty"></div>
+		</div>
+	</div>
+
+	 <script src="js/script.js"></script>
+</body>
+</html>
