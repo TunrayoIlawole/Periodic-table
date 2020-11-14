@@ -1,4 +1,5 @@
 let domElements = {
+    container: document.querySelector('.main-content'),
     heading: document.querySelector('h2'),
     video: document.querySelector('video'),
     fact: document.querySelector('.fact-text'),
